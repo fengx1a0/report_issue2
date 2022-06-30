@@ -98,7 +98,7 @@ onmouseleave and onmouseenter are the two main public properties of the dom tag,
 
 This is stored xss and has a very high probability of triggering.
 
-![image-20220701035802875](images\image-20220701035802875.png)
+![image-20220701035802875](images/image-20220701035802875.png)
 
 The offical demo can also be triggered. 
 
