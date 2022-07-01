@@ -67,11 +67,11 @@ Here is a sipmle Demo:
 </html>
 ```
 
-**analyse: **
+**analyse：**
 
 First, I made sure that the user's input would be processed by the application and rendered on the page.
 
-After performing black-box testing, I found that if I used some special tags in the editor, some special tags that could cause the script to execute would be parsed afterwards.
+After performing black-box testing, I found that if I used some special tags in the editor, tags that could cause the script to execute would be parsed afterwards.
 
 Here are some special tags:
 
@@ -82,11 +82,11 @@ Here are some special tags:
 <input autofocus>\n
 ```
 
-So I can now use tags like img, iframe, a, etc. to make the danger tag parsed.
+Now I can use dangerous tags like img, iframe, etc.
 
 But I found that many tag attributes are disabled by the application, such as onerror, onload, etc.
 
-Then I started another poking around, looking for a tag that could execute javascript code.
+Then I started another fuzzing, looking for a tag that could execute javascript code.
 
 Eventually I found that the frame tag and its src attribute could execute javacript code, and my poc looked like this
 
